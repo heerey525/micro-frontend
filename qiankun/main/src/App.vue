@@ -1,25 +1,14 @@
 <template>
-  <div class="container">
-    <div class="app-header">
-      <prime-header></prime-header>
-    </div>
-    <div class="app-menu">
-      <prime-menu></prime-menu>
-    </div>
-    <div class="app-content">
-      <div id="root-view"></div>
-    </div>
-    <div class="help-taggle">
-      <prime-help></prime-help>
-    </div>
+  <div id="layout-wrapper">
+    <div class="layout-header">头部导航</div>
+    <div id="root-view"></div>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'App',
-  components: {}
+  components: {},
 }
 </script>
 

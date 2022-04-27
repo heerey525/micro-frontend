@@ -26,20 +26,6 @@ module.exports = {
       },
     }, // 配置多个代理
   },
-  // 移动端项目启用
-  // css: {
-  //   loaderOptions: {
-  //     postcss: {
-  //       plugins: [
-  //         autoprefixer(),
-  //         pxtorem({
-  //             rootValue: 192,
-  //             propList: ['*'],
-  //         })
-  //       ]
-  //     }
-  //   }
-  // },
   chainWebpack: (config) => {
     config.resolve.alias
       .set('@', resolve('./src')) // key,value自行定义，比如.set('@@', resolve('src/components'))
