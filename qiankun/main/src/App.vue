@@ -1,6 +1,9 @@
 <template>
   <div id="layout-wrapper">
     <div class="layout-header">头部导航</div>
+    <router-link to="/sub-vue">sub-vue</router-link>
+    <br />
+    <router-link to="/sub-react">sub-react</router-link>
     <div id="root-view"></div>
   </div>
 </template>

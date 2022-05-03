@@ -1,42 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/home.vue'
 import ErrorPage from '../views/ErrorPage.vue'
 
-// 注册路由插件
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home,
-    children: [
-      {
-        path: '/child',
-        name: 'child',
-        meta: {
-          title: '子页面'
-        },
-        component: () => import('../views/child.vue')
-      },
-    ]
-  },
-  {
-    path: '/axios',
-    name: 'axios',
-    meta: {
-      title: '接口请求'
-    },
-    component: () => import('../views/axios.vue')
-  },
-  {
-    path: '/count',
-    name: 'count',
-    meta: {
-      title: '计时器'
-    },
-    component: () => import('../views/count.vue')
+    component: () => import('../App.vue'),
   },
   {
     path: '*',
